@@ -1,0 +1,66 @@
+ rgba(1, 9, 32, 0.979)
+
+ 
+
+ <div class="container">
+    <div class="row my-5">
+      <div class="col-4">
+        <div class="card text-center" style="width: 18rem; height: 25rem; ">
+          
+          <img src="img/road.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ROADS</h5>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card text-center" style="width: 18rem; height: 25rem; ">
+          
+          <img src="img/bridges.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BRIDGES</h5>
+            
+          </div>
+        </div>
+      </div>
+        <div class="col-4">
+          <div class="card text-center" style="width: 18rem; height: 25rem; ">
+            
+            <img src="img/towers.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HIGHRISES & TOWERS</h5>
+              
+            </div>
+          </div></div>
+          <div class="col-4">
+        <div class="card text-center" style="width: 18rem; height: 25rem; ">
+          
+          <img src="img/shopping.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">SHOPPING MALLS</h5>
+            
+          </div>
+        </div></div>
+        <div class="col-4">
+          <div class="card text-center" style="width: 18rem; height: 25rem;  ">
+            
+            <img src="img/township.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">TOWNSHIP</h5>
+              
+            </div>
+          </div></div>
+          <div class="col-4">
+        <div class="card text-center" style="width: 18rem; height: 25rem;  ">
+          
+          <img src="img/high.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HIGH INFRASTRUCTURES</h5>
+            
+          </div>
+        </div>
+        </div>
+      </div>
+    </div> 

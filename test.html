@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
+    }
+    .carousel-caption {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+    }
+    .carousel-caption h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #092c6e;
+    }
+    .section-heading {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .card-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .footer {
+      background-color: #092c6e;
+      color: #fff;
+      padding: 10px 0;
+    }
+    .navbar-nav .nav-link:hover {
+            color: #fff; /* Change the text color when hovered */
+            background-color: rgba(255, 255, 255, 0.1); /* Change the background color when hovered */
+            transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+    }
+    .card:hover {
+            transform: translateY(-10px); /* Move the card up slightly when hovered */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Apply a shadow when hovered */
+            transition: transform 0.3s, box-shadow 0.3s; /* Add a smooth transition effect */
+        }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(9, 44, 110);">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.png" width="20%" class="ps-2 col-md-1 m-2 logo-holder">
+            </a>
+            <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+      
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link ps-3 pe-3" href="index.html">HOME</a>
+              <a class="nav-link ps-3 pe-3" href="about.html">ABOUT</a>
+              <a class="nav-link active ps-3 pe-3" aria-current="page" href="service.html">SERVICE</a>
+              <a class="nav-link ps-3 pe-3" href="contact.html">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        
+      </div>
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/about.jpg" class=" slide d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block text-black fw-bold">
+            <h2 class="fw-bold" >OUR SERVICES </h2>
+            
+          </div>
+        </div>
+      </div>
+
+  <section class="bg-white">
+    <div class="container py-5">
+      <h4 class="section-heading text-md-center">KALHARA CAN HANDLE PROJECTS LIKE</h4>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card text-center">
+              <img src="img/road.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ROADS</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card text-center">
+              <img src="img/bridges.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">BRIDGES</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card text-center">
+              <img src="img/towers.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">HIGHRISES & TOWERS</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card text-center">
+              <img src="img/shopping.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SHOPPING MALLS</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card text-center">
+              <img src="img/township.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">TOWNSHIP</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card text-center">
+              <img src="img/high.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">HIGH INFRASTRUCTURES</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="container py-5 d-md-flex align-items-md-center justify-content-md-center flex-column">
+      <h4 class="section-heading">KALHARA CAN SUPPLY BULK MATERIALS LIKE</h4>
+      <div class="row text-md-center">
+        <h5 class="p-3" scope="col">STEEL IN ALL GRADES</h5>
+              
+            
+        <h5 class="p-3" scope="col">CEMENT IN ALL GRADE</h5>
+        
+        <h5 class="p-3" scope="col">BLUE METAL AGGREGATES & STONES</h5>
+        
+      
+        <h5 class="p-3" scope="col">MARBLES & GRANITES</h5>
+        
+        <h5 class="p-3" scope="col">FLY ASH BRICKS & AAC BRICKS</h5>
+        
+        <h5 class="p-3" scope="col">ALL TYPES ROOFING SOLUTIONS</h5>
+        
+      </div>
+            </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-md-center">
+      <h5>@2023. Kalhara Concepts. All Rights Reserved</h5>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
