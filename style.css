@@ -1,3 +1,7 @@
+body{
+font-family: 'Poppins', sans-serif;
+
+}
 
 img.slide{
   height: 400px;
@@ -21,8 +25,44 @@ btn-1:hover{
     transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
 }
 
-.footer {
-  background-color: rgb(9, 44, 110);
+footer {
+  background-color: rgb(150, 220, 222);
   color: #fff;
   padding: 10px 0;
 }
+
+#navbar{
+  background-color: rgb(150, 220, 222); 
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media screen and (min-width: 580px){
+  #smalllogo{
+    display: none;
+  }
+
+  #socialLinks{
+    display: none;
+  }
+}
+
+.section-container {
+  font-size: 18px;
+}
+
+.featured-services h1,
+.call-to-action h1 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.featured-services ul,
+.call-to-action ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Add any additional styles as needed */

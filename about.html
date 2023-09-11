@@ -4,313 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title> About Us</title>
-
-    <link rel="icon" type="image/jpg" href="img/logo.png">
-
+    <title> About Kalhara Concepts</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="custom.css/nav.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 
-  <!-- Apple Meta Tags -->
-    <!-- To run the web application in full-screen -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
-    <!-- Has no effect unless you have the previous meta tag -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
  
   </head>
-  <body  style=" background-color: rgb(242,242,242);">
-
   
 
+  <nav id="navbar" class="navbar navbar-expand-lg navbar" style="background-color: rgb(150, 220, 222);">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" class="logo-holder w-75">
+        </a>
+        <button class="navbar-toggler ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup">
+          <i class="fas fa-bars"></i> <!-- FontAwesome hamburger icon -->
+        </button>
+        
+      </div>
   
-
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(9, 44, 110);">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.png" width="20%" class="ps-2 col-md-1 m-2 logo-holder">
-          </a>
-          <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <!-- Offcanvas (opening from the right) -->
+      <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="navbarNavAltMarkup">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div id="smalllogo" class="p-4 text-black" style="background-color: rgb(150, 220, 222); font-size: 22px; font-weight: bold;">
+          Kalhara Concepts
+        </div>
+        <div class="offcanvas-body">
           <div class="navbar-nav">
-            <a class="nav-link ps-3 pe-3" href="index.html">HOME</a>
-            <a class="nav-link active ps-3 pe-3" aria-current="page" href="about.html">ABOUT</a>
-            <a class="nav-link  ps-3 pe-3"  href="service.html">SERVICE</a>
-            <a class="nav-link ps-3 pe-3" href="contact.html">CONTACT</a>
+            <a class="nav-link ps-3 pe-3" href="index.html" style="font-size: 20px; font-weight: bold;">HOME</a>
+            <a class="nav-link active ps-3 pe-3" aria-current="page" href="about.html" style="font-size: 20px; font-weight: bold;">ABOUT</a>
+            <a class="nav-link ps-3 pe-3" href="service.html" style="font-size: 20px; font-weight: bold;">SERVICE</a>
+            <a class="nav-link ps-3 pe-3" href="project.html" style="font-size: 20px; font-weight: bold;">PROJECTS</a>
+            <a class="nav-link ps-3 pe-3" href="career.html" style="font-size: 20px; font-weight: bold;">CAREERS</a>
+            <a class="nav-link ps-3 pe-3" href="contact.html" style="font-size: 20px; font-weight: bold;">CONTACT</a>
+          </div>
+          <div id="socialLinks">
+            <i class="fa-brands fa-instagram px-2 pt-5" style="color: #000; font-size: 2rem;"></i>
+            <i class="fa-brands fa-facebook px-2 pt-5" style="color: #000; font-size: 2rem;"></i>
+            <i class="fa-brands fa-twitter px-2 pt-5" style="color: #000; font-size: 2rem;"></i>
+            <i class="fa-brands fa-youtube px-2 pt-5" style="color: #000; font-size: 2rem;"></i>
           </div>
         </div>
       </div>
-    </nav>
-
+      <!-- End Offcanvas -->
+    </div>
+  </nav>
+  
       
-      <div id="carouselExampleCaptions" class="carousel slide" >
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 5em;">
+        
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/about.jpg" class="scroll-animation slide d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block text-black scroll-animation-text">
+          <h5>About Kalhara Concepts</h5>
           
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/about.jpg" class=" slide d-block w-100" alt="...">
-            <div class="carousel-caption  d-md-block text-black fw-bold">
-              <h2 class="fw-bold" >ABOUT US </h2>
-              
-            </div>
+      </div>
+   </div>
+  </div>
+
+  <div class="section-container">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="featured-services mb-4 py-4">
+            
+            <h1 class="fw-bold"> Pioneering Excellence in Civil Engineering</h1>
+            <p class="fw-light">Kalhara Concepts is more than just a construction company; we are the architects of the future. Our journey is one of passion and precision, where every project is a testament to our unwavering commitment to engineering excellence.</p>
+            <br>
+            <br>
+            <h1 class="fw-bold"> Our Commitment to Excellence:</h1>
+            <p class="fw-light">We don't just build structures; we create living works of art. Kalhara Concepts is where innovation meets engineering brilliance. Whether it's crafting entire construction solutions or supplying the critical materials that breathe life into projects, we are dedicated to turning your vision into reality.</p>
+            <br>
+            <br>
+            <h1 class="fw-bold"> Our Vision - Shaping Tomorrow's Infrastructure:</h1>
+            <p class="fw-light">Kalhara Concepts Pvt Ltd envisions a future where we stand tall as the premier civil engineering and infrastructure service provider across India. Our focus extends beyond the present; it's about building a legacy that generations will admire. We are committed to delivering quality-based services that endure the test of time.</p>
           </div>
-       </div>
-     </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="img/stock-about.jpg" alt="Stock Image 1" class="img-fluid rounded">
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-lg-6">
+        <img src="img/stock-about-2.jpg" alt="Stock Image 1" class="img-fluid rounded">
 
-
-      
-
-      <div style="font-size: 18px;" class="p-md-5 pe-5 ps-5 fw-bold m-md-5 mt-5 text-center">
-        <h4 class="pe-md-5 fw-bold">About Kalhara Concepts Pvt. Ltd :</h4><br>
-      <p>
-        They are an integrated civil engineering company being focused in complete construction or a part of projects and supply of main stream material supply whatever indeed in civil construction projects. Their expertise project management team eyes on quality control and timely operations with qualified engineers and experienced managers in key projects.
-      </p>
-      <p>
-        Kalhara Concepts Pvt. Ltd has its clear vision about the futuristic endevour to reach as one of the best civil engineering, infrastructure service provider in pan India level. Kalhara mainly focuses in quality based service which will remain in the industry forever.
-      </p>
-      <p>
-        Since its opening of the entity in 2021, while the whole world in pandemic scenario Kalhara proved to be the most sustainable entrepreneurship, with its hardworking and more aimful activities, without any suspicion in the market Kalhara marked in many perfect headlines and now short listed with its expertise and solid back up, both financially and technically. Kalhara will be one of the renowned entity in civil infrastructure in next five year activities, both in Govt. and Non-Govt. sectors.
-      </p>
-      <p>
-        The main objective of the company is to service key infrastructure projects. Company can also undertake huge quantity of material supply in project’s rates with slab wise further to discounts based on quantity requirement.
-      </p>
-      <p>
-        Company has strong policy in keeping service quality more than financial benefits. Material quality and timely delivery of services are key components of quality policy which ends in customers satisfaction.
-      </p>
       </div>
-
-      
-      <div style="font-size: 18px; background-color: rgb(242,242,242);" class="p-md-5 pe-5 ps-5 fw-bold m-md-5 mt-5 text-center" >
-      <H4 class="pe-md-5 fw-bold ">THE COMPANY</H4><br>  
-<!--         
-      <table class="table table-borderless"" style="background-color: rg(242,242,242);">
-  <thead>
-    <tr>  
-      <th style="background-color: rg(242,242,242);"scope="col">Name</th>
-      <th scope="col">:</th>
-      <th scope="col">Kalhara Concepts Pvt. Ltd</th>
-    </tr>
-    <tr>
-                <th scope="col">CIN</th>
-                <th scope="col">:</th>
-                <th scope="col">U26990KL2022PTC074925</th>
-            </tr>
-            <tr>
-              <th scope="col">Registration Number</th>
-              <th scope="col">:</th>
-              <th scope="col">074925</th>
-            </tr>
-            <tr>
-            <th scope="col">Nature</th>
-            <th scope="col">:</th>
-            <th scope="col">Private Limited</th>
-            </tr>
-            <tr>
-            <th scope="col">Date of Incorporation</th>
-            <th scope="col">:</th>
-            <th scope="col">08 April 2022</th>
-            </tr>
-            <tr>
-           <th scope="col">Directors</th>
-           <th scope="col">:</th>
-           <th scope="col">2</th>
-           </tr>
-           <tr>
-          <th scope="col">PAN</th>
-          <th scope="col">:</th>
-          <th scope="col">AAJCK4471F</th>
-         </tr>
-          <tr>
-        <th scope="col">TAN</th>
-        <th scope="col">:</th>
-        <th scope="col">CHNK08853F</th>
-        </tr>
-       <tr>
-        <th scope="col">GST</th>
-        <th scope="col">:</th>
-        <th scope="col">32AAJCK4471F1ZN</th>
-       </tr>
-       <tr>
-        <th scope="col">URN</th>
-        <th scope="col">:</th>
-        <th scope="col">UDYAM-KL-13-0039938</th>
-        </tr>
-  </thead>
-</table> -->
-
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-6 font-weight-bold">Name:</div>
-        <div class="col-6">Kalhara Concepts Pvt. Ltd</div>
+        <div class="col-lg-6">
+          <div class="call-to-action mb-4 py-4">
+            <h1 class="fw-bold">Our Mission - Rising Above Challenges: </h1>
+            <p class="fw-light">Established in 2021, during a global pandemic, Kalhara Concepts has risen as a beacon of sustainable entrepreneurship. Through unwavering dedication and determined actions, we have earned the trust of the market. Our expertise, fortified by solid financial and technical foundations, positions us for recognition in civil infrastructure across government and non-government sectors in the next five years. Our mission is to thrive amidst adversity and shape the future of civil engineering.</p>
+           
+            
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="featured-services mb-4 py-4">
+            
+            <h1 class="fw-bold">Our Expertise - Visionaries and Builders</h1>
+            <p class="fw-light">Our expertise is a blend of vision and precision. We are more than engineers; we are artists who transform blueprints into masterpieces. Our proficient team of engineers and seasoned managers ensures that quality is at the forefront of every project. At Kalhara Concepts, we don't just build; we create legacies that stand the test of time.</p>
+            <br>
+            <br>
       </div>
-      <!-- <div class="row">
-        <div class="col-6 font-weight-bold">CIN:</div>
-        <div class="col-6">U26990KL2022PTC074925</div>
-      </div> -->
-      <div class="row">
-        <div class="col-6 font-weight-bold">Registration Number:</div>
-        <div class="col-6">074925</div>
-      </div>
-      <div class="row">
-        <div class="col-6 font-weight-bold">Nature:</div>
-        <div class="col-6">Private Limited</div>
-      </div>
-      <div class="row">
-        <div class="col-6 font-weight-bold">Date of Incorporation:</div>
-        <div class="col-6">08 April 2022</div>
-      </div>
-      <div class="row">
-        <div class="col-6 font-weight-bold">Directors:</div>
-        <div class="col-6">2</div>
-      </div>
-      <div class="row">
-        <div class="col-6 font-weight-bold">PAN:</div>
-        <div class="col-6">AAJCK4471F</div>
-      </div>
-      <div class="row">
-        <div class="col-6 font-weight-bold">TAN:</div>
-        <div class="col-6">CHNK08853F</div>
-      </div>
-      <div class="row">
-        <div class="col-6 font-weight-bold">GST:</div>
-        <div class="col-6">32AAJCK4471F1ZN</div>
-      </div>
-      <div class="row">
-        <div class="col-6 font-weight-bold">URN:</div>
-        <div class="col-6">UDYAM-KL-13-0039938</div>
-      </div>
+    </div>
+    <div class="col-lg-6">
+      <img src="img/stock-about-3.jpg" alt="Stock Image 1" class="img-fluid rounded">
     </div>
   </div>
-</div>
-</div>
-
-<!-- 
-       <div>
-        
-        <table class="table">
-          <thead>
-            
-            
-          </thead>
-       </div>
-       -->
-
-
-
-
-      <div style="font-size: 18px;" class="p-md-5 pe-5 ps-5 fw-bold m-md-5 mt-5 text-center">
-        <h4 class="pe-md-5 fw-bold">The Team, Expertise & Skills :</h4><br>
+      </div>
       
-      <p>
-        Kalhara has a strong team of core experienced and skilled peoples who has been worked with globally recognized
-        projects like Oil & Gas Procurement, Oil & Gas Off-Shore Constructions at Middle East North African Regions. The
-        team is highly dedicated and motivated to project completion and commissioning without any compromise in quality
-        servicing
-      </p>
-       </div>
-
-       <div style="font-size: 18px; text-align: center;" class="p-5 pe-5 ps-5 fw-bold m-5 d-flex justify-content-center align-items-center flex-column">
-        <h4 class="fw-bold">The Main Panel of Administration & Operations are :-</h4><br>
-        <div style="text-align: left;">
-            <ol style=" padding-left: 0;">
-                <li>Managing Director</li>
-                <li>Director</li>
-                <li>Chief Director</li>
-                <li>General Manager</li>
-                <li>Project Manager</li>
-                <li>Manager Of Operations</li>
-                <li>Assistant Project Manager</li>
-                <li>Accounts Manager</li>
-            </ol>
-        </div>
-    </div>
-    
 
 
-          
-        
       
-<!--     
-      <div class="container">
-      <div class="row">
-        <div class="col-md-7">
-          <div class="card text-center" style="width: 27rem; margin: 40px; height: 55rem;">
-            <h4 class="card-title text-center">The Managing Director</h4>
-            <img src="img/md.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Name : BABISH PANDARAN BABU</h5>
-              <h5 class="card-title">DIN/PAN: 03486364</h5>
-              <p class="card-text">The Managing Director, Babish P B is experienced in marketing and served multi national companies for 15 Years both
-                in India and Abroad. His skills also endorsed in engineering background, both in computer engineering and mechanical
-                engineering. His valuable experience in administration and cost control keep company policies strong and survival in
-                any negative scenarios.</p>
+      <footer >
+        <div class="container my-5 text-center">
+          <div class="row">
+            <div class="col-md my-4">
+              <h3 class="text-black fw-bold">Quick Links</h3>
+              <ul style="list-style-type: none; margin-left: -40px;"> <!-- Add this style -->
+                <li><a class="btn fw-bold" href="index.html">HOME</a></li>
+                <li><a class="btn fw-bold" href="about.html">ABOUT</a></li>
+                <li><a class="btn fw-bold" href="service.html">SERVICE</a></li>
+                <li><a class="btn fw-bold" href="project.html">PROJECTS</a></li>
+                <li><a class="btn fw-bold" href="career.html">CAREERS</a></li>
+                <li><a class="btn fw-bold" href="contact.html">CONTACT</a></li>
+                <!-- Add more categories here -->
+              </ul>
+            </div>
+
+            <div class="col-md my-4 text-black">
               
+              <div class="footer-social">
+               <h3 class="fw-bold text-center"> Follow Us</h3>
+                <ul style="list-style: none;" class="text-center"> <!-- Add this style -->
+                  <li><a href="#" class="text-black" style="margin-left: -40px; text-decoration: none; font-size: 1.4rem;"><i class="fab fa-instagram" style="color: #000; font-size: 1.4rem;"></i></a></li>
+                  <li><a href="#" class="text-black" style="margin-left: -40px; text-decoration: none; font-size: 1.4rem;"><i class="fab fa-facebook" style="color: #000; font-size: 1.4rem;"></i></a></li>
+                  <li><a href="#" class="text-black" style="margin-left: -40px; text-decoration: none; font-size: 1.4rem;"><i class="fab fa-twitter" style="color: #000; font-size: 1.4rem;"></i></a></li>
+                  <li><a href="#" class="text-black" style="margin-left: -40px; text-decoration: none; font-size: 1.4rem;"><i class="fab fa-youtube" style="color: #000; font-size: 1.4rem;"></i></a></li>
+                  <!-- Add more social icons and links here -->
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md my-4 text-black text-center">
+              <div>
+                <h3 class="fw-bold">Contact Us</h3>
+                <h4>Location</h4>
+                <p class="">Chembiparambil Hashmi Towers <br> Kodannur , Thrisssur , Kerala</p>
+                
+                <h4>Email</h4>
+                <p class="fw-light">babishbabu12@gmail.com</p>
+                
+                <h4>Phone</h4>
+                <p class="fw-light">+918921511901</p>
+              </div>
+                      
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-12">
+              <strong class="copyrights text-center text-black">© 2023. Kalhara Concepts. All Rights Reserved</strong>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card text-center" style="width: 27rem; margin: 40px; height: 55rem;">
-            <h4 class="card-title text-center">The Director</h4>
-            <img src="img/director.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Name : PANIKKASSERY RATHNAN NIBIN</h5>
-              <h5 class="card-title">DIN/PAN: 09565845</h5>
-              <p class="card-text">A well experienced enthusiastic in material management and procurement, served projects at Oman in Oil & Gas OffShore industries. His knowledge in mining of blue metal and core stones helps company to move with any kind of
-                sourcing without any unforeseen hassles and hacks.</p>
-              
-            </div>
-          </div></div>
-      </div>
-      </div> -->
-      
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card text-center">
-        <h4 class="card-title">The Managing Director</h4>
-        <img src="img/md.jpg" class="card-img-top img-fluid" alt="Managing Director">
-        <div class="card-body">
-          <h5 class="card-title">Name: BABISH PANDARAN BABU</h5>
-          <h5 class="card-title">DIN/PAN: 03486364</h5>
-          <p class="card-text">The Managing Director, Babish P B is experienced in marketing and served multi-national companies for 15 years both in India and abroad. His skills are endorsed in engineering backgrounds, both in computer engineering and mechanical engineering. His valuable experience in administration and cost control keeps company policies strong and enables survival in any negative scenarios.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card text-center">
-        <h4 class="card-title">The Director</h4>
-        <img src="img/director.jpg" class="card-img-top img-fluid" alt="Director">
-        <div class="card-body">
-          <h5 class="card-title">Name: PANIKKASSERY RATHNAN NIBIN</h5>
-          <h5 class="card-title">DIN/PAN: 09565845</h5>
-          <p class="card-text">A well-experienced enthusiast in material management and procurement, served projects at Oman in Oil & Gas Offshore industries. His knowledge in mining of blue metal and core stones helps the company to source materials without unforeseen hassles.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-      <footer
-            style="background-color: rgb(9, 44, 110);"class="  pt-4 pb-4 text-center  ">
-                  
-                  <h5 class="text-white " style=>@2023. Kalhara Concepts. All Right Reserved</h5>
-                       
-          </footer>
-
+      </footer>
+   
 
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
       <script src="js/bootstrap.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
+  <script src="script.js"></script>
   </body>
 </html>

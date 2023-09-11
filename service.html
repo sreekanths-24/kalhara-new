@@ -3,151 +3,265 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Services</title>
-  
-  <link rel="icon" type="image/jpg" href="img/logo.png">
-
+  <title>Our Services</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="custom.css/service.css">
+  <link rel="stylesheet" href="custom.css/nav.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 
-  <!-- Apple Meta Tags -->
-    <!-- To run the web application in full-screen -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
-    <!-- Has no effect unless you have the previous meta tag -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(9, 44, 110);">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-          <div class="d-flex align-items-center">
-            <a class="navbar-brand" href="#">
-              <img src="img/logo.png" width="20%" class="ps-2 col-md-1 m-2 logo-holder">
-            </a>
-            <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-      
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link ps-3 pe-3" href="index.html">HOME</a>
-              <a class="nav-link ps-3 pe-3" href="about.html">ABOUT</a>
-              <a class="nav-link active ps-3 pe-3" aria-current="page" href="service.html">SERVICE</a>
-              <a class="nav-link ps-3 pe-3" href="contact.html">CONTACT</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-      
-
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  
+  <nav id="navbar" class="navbar navbar-expand-lg navbar" style="background-color: rgb(150, 220, 222);">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" class="logo-holder w-75">
+        </a>
+        <button class="navbar-toggler ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup">
+          <i class="fas fa-bars"></i> <!-- FontAwesome hamburger icon -->
+        </button>
         
       </div>
-      
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/about.jpg" class=" slide d-block w-100" alt="...">
-          <div class="carousel-caption  d-md-block text-black fw-bold">
-            <h2 class="fw-bold" >OUR SERVICES </h2>
-            
+  
+      <!-- Offcanvas (opening from the right) -->
+      <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="navbarNavAltMarkup">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div id="smalllogo" class="p-4 text-black" style="background-color: rgb(150, 220, 222); font-size: 22px; font-weight: bold;">
+          Kalhara Concepts
+        </div>
+        <div class="offcanvas-body">
+          <div class="navbar-nav">
+            <a class="nav-link ps-3 pe-3" href="index.html" style="font-size: 20px; font-weight: bold;">HOME</a>
+            <a class="nav-link ps-3 pe-3" href="about.html" style="font-size: 20px; font-weight: bold;">ABOUT</a>
+            <a class="nav-link active ps-3 pe-3" aria-current="page" href="service.html" style="font-size: 20px; font-weight: bold;">SERVICE</a>
+            <a class="nav-link ps-3 pe-3" href="project.html" style="font-size: 20px; font-weight: bold;">PROJECTS</a>
+            <a class="nav-link ps-3 pe-3" href="career.html" style="font-size: 20px; font-weight: bold;">CAREERS</a>
+            <a class="nav-link ps-3 pe-3" href="contact.html" style="font-size: 20px; font-weight: bold;">CONTACT</a>
+          </div>
+          <div id="socialLinks">
+            <i class="fa-brands fa-instagram px-2 pt-5" style="color: #000; font-size: 2rem;"></i>
+            <i class="fa-brands fa-facebook px-2 pt-5" style="color: #000; font-size: 2rem;"></i>
+            <i class="fa-brands fa-twitter px-2 pt-5" style="color: #000; font-size: 2rem;"></i>
+            <i class="fa-brands fa-youtube px-2 pt-5" style="color: #000; font-size: 2rem;"></i>
           </div>
         </div>
       </div>
+      <!-- End Offcanvas -->
+    </div>
+  </nav>
+      
+  <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 5em;">
+        
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/service.jpg" class=" slide d-block w-100 scroll-animation" alt="...">
+        <div class="carousel-caption scroll-animation-text d-md-block text-black">
+          <h5>Our Services</h5>
+          
+        </div>
+      </div>
+   </div>
+  </div>
+  
 
-  <section class="bg-white">
-    <div class="container py-5">
-      <h4 class="section-heading text-md-center">KALHARA CAN HANDLE PROJECTS LIKE</h4>
+  
+  <section style="background-color: rgb(77, 196, 200);">
+    <div class="container p-5">
+      <h1 class="text-center fw-bold text-white">Projects We Craft - Building the Future Today</h1>
+    </div>
+  
+    <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card text-center">
-              <img src="img/road.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">ROADS</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card text-center">
-              <img src="img/bridges.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">BRIDGES</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card text-center">
-              <img src="img/towers.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">HIGHRISES & TOWERS</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card text-center">
-              <img src="img/shopping.jpg" class="card-img-top" alt="...">
-              <p> </p><!--remove these 2 paragraph tags if needed-->
-              <p> </p>
-              <div class="card-body">
-                <h5 class="card-title">SHOPPING MALLS</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card text-center">
-              <img src="img/township.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">TOWNSHIP</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card text-center">
-              <img src="img/high.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">HIGH INFRASTRUCTURES</h5>
-              </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title ">Roads</h5>
+              <p class="card-text">Our roads are not just paths; they are the veins that connect communities, fostering progress and unity.</p>
             </div>
           </div>
         </div>
-    </div>
-  </section>
-
-  <section class="bg-white">
-    <div class="container py-5 d-md-flex align-items-md-center justify-content-md-center flex-column">
-      <h4 class="section-heading">KALHARA CAN SUPPLY BULK MATERIALS LIKE</h4>
-      <div class="row text-md-center">
-        <h5 class="p-3" scope="col">STEEL IN ALL GRADES</h5>
-              
-            
-        <h5 class="p-3" scope="col">CEMENT IN ALL GRADE</h5>
-        
-        <h5 class="p-3" scope="col">BLUE METAL AGGREGATES & STONES</h5>
-        
-      
-        <h5 class="p-3" scope="col">MARBLES & GRANITES</h5>
-        
-        <h5 class="p-3" scope="col">FLY ASH BRICKS & AAC BRICKS</h5>
-        
-        <h5 class="p-3" scope="col">ALL TYPES ROOFING SOLUTIONS</h5>
-        
-      </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Bridges</h5>
+              <p class="card-text">We don't just build bridges; we create lifelines that bridge divides and open opportunities.</p>
             </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Highrises & Towers</h5>
+              <p class="card-text">Our structures don't just touch the sky; they shape iconic cityscapes and redefine skylines.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Shopping Malls & Townships</h5>
+              <p class="card-text">We don't just construct; we create vibrant spaces where luxury and convenience converge.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">High Infrastructures</h5>
+              <p class="card-text">We are the driving force behind critical infrastructure projects that elevate societies and improve lives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-5">
+      <h1 class="text-center fw-bold text-white">Materials We Supply - Building Blocks of Quality</h1>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Steel in All Grades</h5>
+              <p class="card-text">Our steel is more than a material; it's the backbone of strength and durability.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Cement in All Grades</h5>
+              <p class="card-text">Our cement is not just a product; it's the foundation of resilience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Blue Metal Aggregates & Stones</h5>
+              <p class="card-text">Our materials are not just rocks; they are the cornerstones of longevity and stability.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Marble & Granites</h5>
+              <p class="card-text">Our stones are not just materials; they are the epitome of luxury and sophistication.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Fly Ash Bricks & AAC Bricks</h5>
+              <p class="card-text">Our bricks are not just construction materials; they are a commitment to a greener future.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">All Types of Roofing Solutions</h5>
+              <p class="card-text">Our roofing solutions are not just protection; they are the shelter for your aspirations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+  
+  <section style="background-color: rgb(77, 196, 200);">
+    <div class="container p-5">
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <div class="mb-4 p-4 text-white">
+            <h2 class="fw-bold">Our Approach - Pioneering Excellence</h2>
+            <p>Kalhara Concepts Pvt. Ltd. doesn't just undertake projects; we create legacies. With a solid financial foundation, we embark on projects with unwavering precision and confidence. Our primary objective is to serve as a cornerstone in key infrastructure projects, ensuring they stand as a testament to our commitment to excellence. Each project is an opportunity to make an indelible mark in the communities we serve.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mb-4 p-4 text-white">
+            <h2 class="fw-bold">Quality Policy - Where Excellence is the Norm</h2>
+            <p>Our commitment to service quality goes beyond financial considerations. Material quality and the timely delivery of services are the cornerstones of our quality policy. We don't just aim to meet customer expectations; we strive to exceed them. Our quality policy isn't just a statement; it's a commitment we uphold in every project.
+              <br>At Kalhara Concepts, we are more than builders; we are visionaries, artists, and creators. We are dedicated to sculpting a world of excellence, one project at a time, and we invite you to join us on this journey of crafting tomorrow's landscapes today. We don't just construct; we create enduring legacies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
-  <footer class="footer">
-    <div class="container text-center py-4">
-      <h5>@2023. Kalhara Concepts. All Rights Reserved</h5>
+  
+
+  <footer>
+    <div class="container my-5 text-center">
+      <div class="row">
+        <div class="col-md my-4">
+          <h3 class="text-black fw-bold">Quick Links</h3>
+          <ul style="list-style-type: none; margin-left: -40px;"> <!-- Add this style -->
+            <li><a class="btn fw-bold" href="index.html">HOME</a></li>
+            <li><a class="btn fw-bold" href="about.html">ABOUT</a></li>
+            <li><a class="btn fw-bold" href="service.html">SERVICE</a></li>
+            <li><a class="btn fw-bold" href="project.html">PROJECTS</a></li>
+            <li><a class="btn fw-bold" href="career.html">CAREERS</a></li>
+            <li><a class="btn fw-bold" href="contact.html">CONTACT</a></li>
+            <!-- Add more categories here -->
+          </ul>
+        </div>
+
+        <div class="col-md my-4 text-black">
+          
+          <div class="footer-social">
+           <h3 class="fw-bold text-center"> Follow Us</h3>
+            <ul style="list-style: none;" class="text-center"> <!-- Add this style -->
+              <li><a href="#" class="text-black" style="margin-left: -40px; text-decoration: none; font-size: 1.4rem;"><i class="fab fa-instagram" style="color: #000; font-size: 1.4rem;"></i></a></li>
+              <li><a href="#" class="text-black" style="margin-left: -40px; text-decoration: none; font-size: 1.4rem;"><i class="fab fa-facebook" style="color: #000; font-size: 1.4rem;"></i></a></li>
+              <li><a href="#" class="text-black" style="margin-left: -40px; text-decoration: none; font-size: 1.4rem;"><i class="fab fa-twitter" style="color: #000; font-size: 1.4rem;"></i></a></li>
+              <li><a href="#" class="text-black" style="margin-left: -40px; text-decoration: none; font-size: 1.4rem;"><i class="fab fa-youtube" style="color: #000; font-size: 1.4rem;"></i></a></li>
+              <!-- Add more social icons and links here -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md my-4 text-black text-center">
+          <div>
+            <h3 class="fw-bold">Contact Us</h3>
+            <h4>Location</h4>
+            <p class="">Chembiparambil Hashmi Towers <br> Kodannur , Thrisssur , Kerala</p>
+            
+            <h4>Email</h4>
+            <p class="fw-light">babishbabu12@gmail.com</p>
+            
+            <h4>Phone</h4>
+            <p class="fw-light">+918921511901</p>
+          </div>
+                  
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-12">
+          <strong class="copyrights text-center text-black">© 2023. Kalhara Concepts. All Rights Reserved</strong>
+        </div>
+      </div>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="js/bootstrap.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
