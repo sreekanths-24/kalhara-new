@@ -108,3 +108,15 @@ footer {
 
 
 /* Add any additional styles as needed */
+
+.card:hover {
+  transform: translateY(-10px); /* Move the card up slightly when hovered */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Apply a shadow when hovered */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add a smooth transition effect */
+}
+
+.newcard:hover {
+  transform: translateY(-10px); /* Move the card up slightly when hovered */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Apply a shadow when hovered */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add a smooth transition effect */
+}
