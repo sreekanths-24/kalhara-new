@@ -100,7 +100,7 @@
       </div>
       <div class="row">
         <input class="p-3 m-3" style="width: 45%; min-width: 300px;" type="text" placeholder="Name">
-        <input class="p-3 m-3" style="width: 45%; min-width: 300px;" type="number" placeholder="Mobile No.">
+        <input class="p-3 m-3" style="width: 45%; min-width: 300px;" type="tel" pattern="[0-9]*" placeholder="Mobile No.">
 
       </div>
       <div class="row">
@@ -113,13 +113,18 @@
           <span style="display: inline-block; font-size: 1rem;" class="p-3">Upload Resume</span>
           <input type="file" name="Resume" id="Resume" style="display: none;">
         </label>
-        <input style="flex: 2; border: 1px solid #333; border-radius: 0 5px 5px 0; padding: 10px; width: 100%;" type="file" name="Resume" id="Resume" accept=".pdf, .doc, .docx">
+        <input style="flex: 2; border: 1px solid #333; border-radius: 0 5px 5px 0; padding: 10px; width: 100%;" type="file" name="Resume" id="Resume" accept=".pdf, .doc, .docx" onchange="checkFileSize(this)">
+        <div id="fileSizeError" style="color: red; display: none;">File size exceeds 1MB.</div>
+        
+        
       </div>
       <div class="row">
-        <input class="my-3 mx-auto px-4 py-2" style="width: 100%; max-width: fit-content; background-color: #3498db; color: #fff; border: none; border-radius: 5px;" type="submit" value="Apply Now">
+        <input class="my-3 mx-auto px-4 py-2" id="submitbtn" style="width: 100%; max-width: fit-content; background-color: #3498db; color: #fff; border: none; border-radius: 5px;" type="submit" value="Apply Now">
 
       </div>                  
     </form>
+
+    
   </div>
      
     <!-- <div class="section-container">
@@ -152,7 +157,7 @@
                 <input type="file" class="form-control-file" id="resume" name="resume" required>
               </div>
     
-              <button type="submit" class="btn btn-primary">Apply</button>
+              <button type="submit"  class="btn btn-secondary">Apply</button>
             </div>
           </div>
         </div>
@@ -216,5 +221,25 @@
       <script src="js/bootstrap.js"></script>
   <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
   <script src="script.js"></script>
+  <script>
+    function checkFileSize(input) {
+      const maxSizeInBytes = 1024 * 1024; // 1MB
+      const submitButton = document.getElementById('submitbtn');
+      if (input.files.length > 0) {
+        const fileSize = input.files[0].size;
+        if (fileSize > maxSizeInBytes) {
+          // Display an error message and clear the input field
+          document.getElementById('fileSizeError').style.display = 'block';
+          input.value = ''; // Clear the selected file
+          submitButton.style.display = 'none';
+        } else {
+          // Hide the error message
+          document.getElementById('fileSizeError').style.display = 'none';
+          submitButton.style.display = 'block';
+        }
+      }
+    }
+  </script>
+
   </body>
 </html>
