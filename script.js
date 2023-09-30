@@ -29,7 +29,7 @@ window.addEventListener('scroll', () => {
 
   // Initialize ScrollReveal
   ScrollReveal().reveal('.scroll-animation', {
-    delay: 200, // Delay before animation starts (in milliseconds)
+    delay: 100, // Delay before animation starts (in milliseconds)
     distance: '50px', // Distance the element moves when revealed
     origin: 'bottom', // Origin of the animation
     duration: 1000, // Duration of the animation (in milliseconds)
@@ -37,7 +37,7 @@ window.addEventListener('scroll', () => {
     // reset: true // Reset the animation when element is out of view
   });
   ScrollReveal().reveal('.scroll-animation-text', {
-    delay: 200, // Delay before animation starts (in milliseconds)
+    delay: 100, // Delay before animation starts (in milliseconds)
     distance: '50px', // Distance the element moves when revealed
     origin: 'top', // Origin of the animation
     duration: 1000, // Duration of the animation (in milliseconds)
