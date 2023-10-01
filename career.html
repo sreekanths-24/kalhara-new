@@ -26,7 +26,7 @@
         <a class="navbar-brand" href="#">
           <img src="img/logo.png" class="logo-holder w-75">
         </a>
-        <button class="navbar-toggler ms-3 " style="position: absolute; right: 2em;" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup">
+        <button class="navbar-toggler ms-3 " style="position: absolute; right: 1.5em;" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup">
           <i class="fas fa-bars"></i> <!-- FontAwesome hamburger icon -->
         </button>
         
@@ -99,13 +99,13 @@
         <h1 class="h1 text-center">Apply Now</h1>
       </div>
       <div class="row">
-        <input class="p-3 m-3" style="width: 45%; min-width: 300px;" type="text" placeholder="Name">
-        <input class="p-3 m-3" style="width: 45%; min-width: 300px;" type="tel" pattern="[0-9]*" placeholder="Mobile No.">
+        <input class="p-3 m-3 career-form my-3 mx-auto" style="width: 49%; min-width: 250px;" type="text" placeholder="Name">
+        <input class="p-3 m-3 career-form my-3 mx-auto" style="width: 49%; min-width: 250px;" type="tel" pattern="[0-9]*" placeholder="Mobile No.">
 
       </div>
       <div class="row">
-        <input class="p-3 m-3" style="width: 45%; min-width: 300px;" type="email" placeholder="Email Id">
-        <input class="p-3 m-3" style="width: 45%; min-width: 300px;" type="text" placeholder="Position Applied For">
+        <input class="p-3 m-3 career-form my-3 mx-auto" style="width: 49%; min-width: 250px;" type="email" placeholder="Email Id">
+        <input class="p-3 m-3 career-form my-3 mx-auto" style="width: 49%; min-width: 250px;" type="text" placeholder="Position Applied For">
 
       </div>
       <div class="row my-2 mx-auto" style="display: flex; width: 100%; max-width: 600px; justify-content: center;">
@@ -114,14 +114,15 @@
           <input type="file" name="Resume" id="Resume" style="display: none;">
         </label>
         <input style="flex: 2; border: 1px solid #333; border-radius: 0 5px 5px 0; padding: 10px; width: 100%;" type="file" name="Resume" id="Resume" accept=".pdf, .doc, .docx" onchange="checkFileSize(this)">
-        <p class="text-center fw-light">Maximum Upload file size :1mb</p>
-        <div id="fileSizeError" style="color: red; display: none;">File size exceeds 1MB.</div>
+        <p class="text-center fw-light">Maximum Upload file size :2mb</p>
+        <div id="fileSizeError" style="color: red; display: none;">File size exceeds 2MB.</div>
         
         
       </div>
       <div class="row">
-        <input class="my-3 mx-auto px-4 py-2" id="submitbtn" style="width: 100%; max-width: fit-content; background-color: #3498db; color: #fff; border: none; border-radius: 5px;" type="submit" value="Apply Now">
+        <input class="my-3 mx-auto px-4 py-2" id="submitbtn" style="width: 100%; max-width: fit-content; background-color: #3498db; color: #fff; border: none; border-radius: 5px; transition: background-color 0.3s;" type="submit" value="Apply Now" onmouseover="this.style.backgroundColor='#0074cc'" onmouseout="this.style.backgroundColor='#3498db'">
 
+        
       </div>                  
     </form>
 
@@ -174,6 +175,7 @@
                       
             </div>
           </div>
+          <hr>
           <div class="row text-center">
             <div class="col-md-12">
               <strong class="copyrights text-center text-black ">© 2023 Kalhara Concepts Pvt Ltd. All Rights Reserved | Privacy Policy | Terms of Use</strong>
@@ -189,7 +191,7 @@
   <script src="script.js"></script>
   <script>
     function checkFileSize(input) {
-      const maxSizeInBytes = 1024 * 1024; // 1MB
+      const maxSizeInBytes = 2048 * 1024; // 1MB
       const submitButton = document.getElementById('submitbtn');
       if (input.files.length > 0) {
         const fileSize = input.files[0].size;
