@@ -100,7 +100,7 @@ footer {
   .carousel-caption h5.display-4 {
     font-size: 48px;
   }
-
+  
   .carousel-caption p.lead {
     font-size: 24px;
   }
@@ -120,3 +120,10 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Apply a shadow when hovered */
   transition: transform 0.3s, box-shadow 0.3s; /* Add a smooth transition effect */
 }
+
+@media (min-width: 400px) {
+  .career-form{
+    width: 45%;
+  }
+}
+

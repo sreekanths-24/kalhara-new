@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
     delay: 100, // Delay before animation starts (in milliseconds)
     distance: '50px', // Distance the element moves when revealed
     origin: 'bottom', // Origin of the animation
-    duration: 1000, // Duration of the animation (in milliseconds)
+    duration: 700, // Duration of the animation (in milliseconds)
     easing: 'ease-out', // Easing function for the animation
     // reset: true // Reset the animation when element is out of view
   });
@@ -40,6 +40,6 @@ window.addEventListener('scroll', () => {
     delay: 100, // Delay before animation starts (in milliseconds)
     distance: '50px', // Distance the element moves when revealed
     origin: 'top', // Origin of the animation
-    duration: 1000, // Duration of the animation (in milliseconds)
+    duration: 700, // Duration of the animation (in milliseconds)
     easing: 'ease-out', // Easing function for the animation
   });
