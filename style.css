@@ -6,6 +6,12 @@ font-family: 'Poppins', sans-serif;
 img.slide{
   height: 500px;
 }
+div.slide{
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 btn-1:hover{
     color: blue;
